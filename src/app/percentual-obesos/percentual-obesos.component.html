@@ -1,0 +1,20 @@
+<h2>Percentual de Obesos por Sexo</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Sexo</th>
+      <th>Obesos</th>
+      <th>Total</th>
+      <th>Percentual</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let candidato of candidatos">
+      <td>{{ candidato[0] }}</td>
+      <td>{{ candidato[1] }}</td>
+      <td>{{ candidato[2] }}</td>
+      <td>{{ candidato[3] | number: '1.2-2' }}%</td>
+    </tr>
+  </tbody>
+</table>

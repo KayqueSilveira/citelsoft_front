@@ -1,0 +1,26 @@
+<h2>Lista de Candidatos</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Sexo</th>
+      <th>Endereço</th>
+      <th>Cidade</th>
+      <th>Estado</th>
+      <th>Celular</th>
+      <th>Tipo Sanguíneo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let candidato of candidatos">
+      <td>{{ candidato.nome }}</td>
+      <td>{{ candidato.sexo }}</td>
+      <td>{{ candidato.endereco }}</td>
+      <td>{{ candidato.cidade }}</td>
+      <td>{{ candidato.estado }}</td>
+      <td>{{ candidato.celular }}</td>
+      <td>{{ candidato.tipoSanguineo }}</td>
+    </tr>
+  </tbody>
+</table>

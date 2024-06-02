@@ -1,0 +1,17 @@
+<h2>Quantidade de Doadores por Tipo Sanguíneo</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Tipo Sanguíneo Receptor</th>
+      <th>Tipos Sanguíneos Doadores</th>
+      <th>Quantidade de Doadores</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let candidato of candidatos">
+      <td>{{ candidato[0] }}</td>
+      <td>{{ candidato[1] }}</td>
+      <td>{{ candidato[2] }}</td>
+    </tr>
+  </tbody>
+</table>

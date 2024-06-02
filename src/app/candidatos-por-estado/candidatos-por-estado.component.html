@@ -1,0 +1,15 @@
+<h2>Contagem de Candidatos por Estado</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Estado</th>
+      <th>Quantidade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of candidatosPorEstado">
+      <td>{{ item[0] }}</td>
+      <td>{{ item[1] }}</td>
+    </tr>
+  </tbody>
+</table>

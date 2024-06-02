@@ -1,0 +1,15 @@
+<h2>IMC por faixa etaria</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Faixa etaria</th>
+      <th>IMC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let candidato of candidatos">
+      <td>{{ candidato.faixaEtaria }}</td>
+      <td>{{ candidato.imc }}</td>
+    </tr>
+  </tbody>
+</table>

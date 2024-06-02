@@ -1,0 +1,18 @@
+<h2>Media idade por tipo sanguineo</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Tipo sanguineo</th>
+      <th>Número de pessoas</th>
+      <th>Média</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let candidato of candidatos">
+      <td>{{ candidato[0] }}</td>
+      <td>{{ candidato[1] }}</td>
+      <td>{{ candidato[2] }}</td>
+    </tr>
+  </tbody>
+</table>
+

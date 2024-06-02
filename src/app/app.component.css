@@ -1,0 +1,91 @@
+/* styles.css */
+
+/* Reset de estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #081f2c;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Estilo do menu de navegação */
+nav {
+  background-color: #333;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  float: left;
+}
+
+.nav-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.nav-menu li a:hover {
+  background-color: #111;
+}
+
+/* Estilo do conteúdo principal */
+main {
+  padding: 20px;
+  background-color: white;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do rodapé */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #081f2c;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+
+
+/* Ajustes para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .nav-menu li a {
+    padding: 15px 20px;
+  }
+}
