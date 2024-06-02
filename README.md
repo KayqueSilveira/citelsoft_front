@@ -1,27 +1,52 @@
-# BancoSangueFrontend
+# Sistema de Processamento de Dados de Candidatos a Doadores de Sangue
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
+## Descrição do Projeto
 
-## Development server
+Este projeto tem como objetivo desenvolver um sistema web para processar e analisar dados de candidatos a doadores de sangue fornecidos por uma agência de banco de sangue. O sistema receberá um JSON com os dados dos candidatos e apresentará os seguintes resultados:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Quantidade de candidatos por estado no Brasil.
+- IMC (Índice de Massa Corporal) médio em cada faixa etária de dez em dez anos: 0 a 10; 11 a 20; 21 a 30, etc.
+- Percentual de obesos entre homens e mulheres (considerando obeso quem tem IMC > 30).
+- Média de idade para cada tipo sanguíneo.
+- Quantidade de possíveis doadores para cada tipo sanguíneo receptor.
 
-## Code scaffolding
+## Funcionalidades
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. **Quantidade de candidatos por estado:**
+   - Exibe a quantidade de candidatos presentes na lista para cada estado do Brasil.
 
-## Build
+2. **IMC médio por faixa etária:**
+   - Calcula e exibe o IMC médio para faixas etárias de dez em dez anos (0 a 10, 11 a 20, 21 a 30, etc.).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. **Percentual de obesos:**
+   - Calcula e exibe o percentual de candidatos obesos (IMC > 30) entre homens e mulheres.
 
-## Running unit tests
+4. **Média de idade por tipo sanguíneo:**
+   - Calcula e exibe a média de idade dos candidatos para cada tipo sanguíneo.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+5. **Possíveis doadores para cada tipo sanguíneo receptor:**
+   - Exibe a quantidade de possíveis doadores para cada tipo sanguíneo receptor.
 
-## Running end-to-end tests
+## Tecnologias Utilizadas
+- **Frontend:**
+  - **Angular:** Framework para construção de aplicações web dinâmicas.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Estrutura do Projeto
 
-## Further help
+### Frontend (Angular)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Components:** Componentes para exibição de dados e interação com o usuário.
+- **Services:** Serviços para comunicação com o backend via HTTP.
+- **Modules:** Módulos do Angular para organização do código.
+
+## Como Executar o Projeto
+
+### Pré-requisitos
+- Node.js e npm
+
+### Frontend
+
+1. Navegue até o diretório do frontend.
+2. Execute o comando `npm install` para instalar as dependências.
+3. Execute o comando `ng serve` para iniciar o servidor de desenvolvimento do Angular.
+4. Acesse o frontend no navegador através do endereço `http://localhost:4200`.
